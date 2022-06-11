@@ -3,18 +3,42 @@ omg flush the toilet
 
 -->
 <!DOCTYPE HTML>
+<style>
+    .text {
+
+    margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+    }
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+
+    margin: auto;
+  width: 200px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 24px;
+  cursor: pointer;;
+}
+    </style>
 <html>
 <body>
-<h1>flush the toilet</h1>
+    <div class="text" style="float: margin-left;">
+        <img src="toilet2.png" alt="toilet" width="50" height="50">
+<h1 style="font-family:Arial, Helvetica, sans-serif;"> flush the toilet</h1>
+</div>
 <br />
-<img src="toilet.jpg" alt="toilet" width="334" height="500">
+<img src="toilet.jpg" alt="toilet" width="300" height="250">
 <br />
- <audio id="sound1" src="flush.ogg" preload="auto"></audio>
-  <button onclick="document.getElementById('sound1').play();">Play
-  it</button>
- <audio controls>
-  <source src="flush.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio> 
+<div class = button>
+<script src="playSound.js"></script>
+<button style="height:50px;width:100px;border-radius: 12px;cursor:pointer; background-color: firebrick; font:bold; font-family:Arial, Helvetica, sans-serif;box-shadow: inset;color: white;" onclick="sound()">Flush
+</button>
+</div>
 </body>
 </html>
